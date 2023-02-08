@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="444.0" prefWidth="611.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.uebung_c.HelloController">
+   <children>
+      <Label layoutX="61.0" layoutY="28.0" text="Pat-ID" />
+      <Label layoutX="60.0" layoutY="55.0" text="First name" />
+      <Label layoutX="61.0" layoutY="89.0" text="Last name" />
+      <Label layoutX="63.0" layoutY="119.0" text="Birthdate" />
+      <Label layoutX="61.0" layoutY="150.0" text="Birth place" />
+      <Label layoutX="59.0" layoutY="183.0" text="Gender" />
+      <Label layoutX="59.0" layoutY="217.0" text="Marital status" />
+      <Label layoutX="59.0" layoutY="253.0" text="Nationality " />
+      <Label layoutX="59.0" layoutY="283.0" text="Postcode/city" />
+      <Label layoutX="61.0" layoutY="313.0" text="Street Name/Nr." />
+      <Label layoutX="59.0" layoutY="344.0" text="Prefix/Phone Nr." />
+      <Label layoutX="60.0" layoutY="378.0" text="Denomination" />
+      <TextField fx:id="pat_id" layoutX="174.0" layoutY="24.0" />
+      <TextField fx:id="lastName" layoutX="175.0" layoutY="85.0" />
+      <TextField fx:id="firstName" layoutX="174.0" layoutY="55.0" />
+      <TextField layoutX="174.0" layoutY="146.0" />
+      <ChoiceBox fx:id="genderbox" layoutX="174.0" layoutY="179.0" prefWidth="150.0" />
+      <ChoiceBox layoutX="174.0" layoutY="213.0" prefWidth="150.0" />
+      <DatePicker layoutX="174.0" layoutY="115.0" />
+      <ComboBox fx:id="nationality" layoutX="225.0" layoutY="249.0" onAction="#NationalityCode" prefWidth="150.0" />
+      <TextField layoutX="174.0" layoutY="279.0" prefHeight="25.0" prefWidth="61.0" />
+      <TextField layoutX="238.0" layoutY="279.0" prefHeight="25.0" prefWidth="138.0" />
+      <TextField layoutX="175.0" layoutY="309.0" />
+      <TextField layoutX="332.0" layoutY="309.0" prefHeight="25.0" prefWidth="39.0" />
+      <TextField layoutX="174.0" layoutY="340.0" prefHeight="25.0" prefWidth="72.0" />
+      <TextField layoutX="258.0" layoutY="340.0" prefHeight="25.0" prefWidth="113.0" />
+      <ComboBox fx:id="denomination" layoutX="175.0" layoutY="374.0" prefWidth="150.0" />
+      <Button layoutX="418.0" layoutY="405.0" mnemonicParsing="false" onAction="#SaveButtonPressed" prefHeight="25.0" prefWidth="52.0" text="Save" />
+      <Button layoutX="483.0" layoutY="405.0" mnemonicParsing="false" onAction="#CancelButtonPressed" text="Cancel" />
+      <Button layoutX="548.0" layoutY="405.0" mnemonicParsing="false" onAction="#ExitButtonPressed" prefHeight="25.0" prefWidth="49.0" text="Exit" />
+      <Label fx:id="nationalityCode" layoutX="174.0" layoutY="253.0" text="____" />
+   </children>
+</AnchorPane>

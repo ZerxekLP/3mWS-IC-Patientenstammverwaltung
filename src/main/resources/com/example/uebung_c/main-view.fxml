@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.uebung_c.MainViewController">
+   <children>
+      <ListView fx:id="listView" layoutX="172.0" layoutY="76.0" prefHeight="200.0" prefWidth="200.0" />
+      <Button layoutX="476.0" layoutY="121.0" mnemonicParsing="false" onAction="#AddMethode" prefHeight="25.0" prefWidth="57.0" text="Add" />
+      <Button layoutX="476.0" layoutY="164.0" mnemonicParsing="false" onAction="#DeleteMethode" prefHeight="25.0" prefWidth="57.0" text="Delete" />
+      <Button layoutX="476.0" layoutY="208.0" mnemonicParsing="false" onAction="#ChangeMethode" text="Change" />
+      <Button layoutX="479.0" layoutY="251.0" mnemonicParsing="false" onAction="#CloseMethode" prefHeight="25.0" prefWidth="57.0" text="Close" />
+   </children>
+</AnchorPane>
